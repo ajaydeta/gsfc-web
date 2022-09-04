@@ -8,4 +8,4 @@ SourceCode for Broadcast grafika's **GSFC** website
 
 
 ## refrence
-[tailwind css dockumentation](https://tailwindcss.com/)
+[tailwind css documentation](https://tailwindcss.com/)
