@@ -1,344 +1,38 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/output.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d4fb4b82d5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="asset/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="asset/image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="asset/image/favicon/site.webmanifest">
+
+    <!-- CSS -->
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <title>GSFC 2022 | Grafika Student Film Competition</title>
 </head>
+
 <body>
-  <!-- This is navbar -->
-<nav class="bg-slate-50 mx-auto max-w-container px-4 sm:px-2 lg:px-4">
-  <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-14">
-    <div class="relative flex h-20 items-center justify-between">
-      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-        <!-- Mobile menu button
-        <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <!--
-            Icon when menu is closed.
-
-            Heroicon name: outline/bars-3
-
-            Menu open: "hidden", Menu closed: "block"
-          -->
-          <!-- <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg> -->
-          <!--
-            Icon when menu is open.
-
-            Heroicon name: outline/x-mark
-
-            Menu open: "block", Menu closed: "hidden"
-          -->
-          <!-- <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button> --> 
-      </div>
-      <div class="flex flex-shrink-0 items-start">
-        <img class="block h-12 w-auto rounded-sm lg:hidden" src="./asset/image/Hitam.png" alt="Your Company">
-        <img class="hidden h-12 w-auto rounded-sm lg:block" src="./asset/image/Hitam.png" alt="Your Company">
-      </div>
-      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
-        <div class="hidden sm:ml-6 sm:block">
-          <div class="flex mx-auto space-x-12 pt-2">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="text-orange-600 px-3 py-2 text-base font-bold hover-underline-animation" aria-current="page">Home</a>
-
-            <a href="#" class="text-gray-900 px-3 py-2 hover:text-orange-600 rounded-md text-base font-semibold hover-underline-animation">About Us</a>
-
-            <a href="#" class="text-gray-900 px-3 py-2 hover:text-orange-600 rounded-md text-base font-semibold hover-underline-animation">Syarat & Ketentuan</a>
-
-            <a href="#" class="text-gray-900 px-3 py-2 hover:text-orange-600 rounded-md text-base font-semibold hover-underline-animation">Timeline</a>
-          </div>
+    <div class="bg-gray-800 h-screen w-screen">
+        <div class="text w-full text-center absolute top-32 px-16">
+            <div class="text-white text-8xl font-semibold">GSFC 2022</div>
+            <div class="text-white text-3xl font-reguler mt-2">The biggest event in broadcast history and I invite all
+                broadcasters to join and enliven this event. Let's join guys</div>
+            <a type="button" href="home.html" data-mdb-ripple="true" data-mdb-ripple-color="light" class="button">
+                Lihat lebih
+            </a>
         </div>
-      </div>
-      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <!-- <button type="button" class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-          <span class="sr-only">View notifications</span>
-          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-          </svg>
-        </button> -->
-
-        <!-- Profile dropdown -->
-        <!-- <div class="relative ml-3">
-          <div>
-            <button type="button" class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-              <span class="sr-only">Open user menu</span>
-              <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-            </button>
-          </div>
-        </div> -->
-        <label for="large-toggle" class="inline-flex relative items-center cursor-pointer">
-          <input type="checkbox" value="" id="large-toggle" class="sr-only peer">
-          <!-- <div class="w-14 h-7 bg-orange-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-orange-600 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-white peer-checked:bg-orange-600"></div> -->
-          <div class="w-14 h-7 bg-orange-600 peer-focus:outline-none peer-focus:ring-4 rounded-full peer dark:bg-gray-400 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-white peer-checked:bg-orange-600"></div>
-        </label>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="sm:hidden" id="mobile-menu">
-    <div class="space-y-1 px-2 pt-2 pb-3">
-      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
-
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
-    </div>
-  </div>
-</nav>
-
-<section class="bg-white md:px-0 py-8 px-4">
-  <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
-    <div class="flex flex-wrap pt-2 items-center sm:-mx-3">
-      <div class="relative md:w-1/2">
-        <div class="w-full absolute top-0 left-0 h-auto z-50 rounded-md sm:rounded-xl" data-rounded="rounded-xl" data-rounded-max="rounded-full">
-            <img src="./asset/image/TV reporter.png" class="">
+        <div class="ilustration absolute bottom-0">
+            <img src="asset/image/onboarding.png">
         </div>
-        <div class="w-full absolute h-auto z-10 left-2 top-12 rounded-md sm:rounded-xl" data-rounded="rounded-xl" data-rounded-max="rounded-full">
-            <img src="./asset/image/Ellipse 29.png" class="">
-        </div>
-        <div class="w-full absolute h-auto z-20 left-28 top-32 rounded-md sm:rounded-xl" data-rounded="rounded-xl" data-rounded-max="rounded-full">
-            <img src="./asset/image/Ellipse 30.png" class="">
-        </div>
-      </div>
-      <div class="w-full md:w-1/2 md:px-3">
-        <div class="w-full pb-6 space-y-6 pt-20 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
-          <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
-            <span class="block xl:inline">Join GSFC 17</span>
-            <span class="block text-indigo-600 xl:inline" data-primary="indigo-600">2022!</span>
-          </h1>
-          <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">the biggest event in broadcast history and I invite all broadcasters to join and enliven this event. Let's join guys!</p>
-          <div class="flex space-x-2 justify-start">
-            <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-10 py-3 bg-orange-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out">
-              Daftar Sekarang
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
-
-
-<section class="bg-white pt-32 pb-14">
-  <div class="container px-8 mx-auto sm:px-12 lg:px-20">
-      <h1 class="text-sm font-bold tracking-wide text-center text-gray-800 uppercase mb-7">Trusted by top-leading companies.</h1>
-      <div class="grid items-center justify-center grid-cols-12 gap-y-8">
-          <div class="flex items-center justify-center col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2">
-              <img src="https://cdn.devdojo.com/tails/images/disney-plus.svg" alt="Disney Plus" class="block object-contain h-12">
-          </div>
-          <div class="flex items-center justify-center col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2">
-              <img src="https://cdn.devdojo.com/tails/images/google.svg" alt="Google" class="block object-contain h-9">
-          </div>
-          <div class="flex items-center justify-center col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2">
-              <img src="https://cdn.devdojo.com/tails/images/hubspot.svg" alt="Hubspot" class="block object-contain h-9">
-          </div>
-          <div class="flex items-center justify-center col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2">
-              <img src="https://cdn.devdojo.com/tails/images/youtube.svg" alt="Youtube" class="block object-contain h-7 lg:h-8">
-          </div>
-          <div class="flex items-center justify-center col-span-6 sm:col-span-4 md:col-span-6 xl:col-span-2">
-              <img src="https://cdn.devdojo.com/tails/images/slack.svg" alt="Slack" class="block object-contain h-9">
-          </div>
-          <div class="flex items-center justify-center col-span-6 sm:col-span-4 md:col-span-6 xl:col-span-2">
-              <img src="https://cdn.devdojo.com/tails/images/shopify.svg" alt="Shopify" class="block object-contain h-9">
-          </div>
-      </div>
-  </div>
-</section>
-
-
-<section class="flex items-center justify-center py-10 text-white bg-white sm:py-16 md:py-24 lg:py-32">
-  <div class="relative max-w-3xl px-10 text-center text-white auto lg:px-0">
-      <div class="flex flex-col w-1/2 md:flex-row">
-
-          <!-- Top Text -->
-          <div class="flex flex-col justify-between">
-              <h1 class="relative flex flex-col text-5xl font-extrabold text-left text-black">
-                  Tentang Kami
-              </h1>
-              <h2 class="text-left pt-4 text-gray-500 xl:text-xl">
-                Building beautiful designs for your next project. We've unlocked the secret to converting visitors into customers. Download our re-usable and extandable components today.
-            </h2>
-          </div>
-          <!-- Right Image -->
-          <div class="relative top-0 right-0 h-64 mt-12 md:-mt-16 md:absolute md:h-96">
-              <img src="https://cdn.devdojo.com/images/december2020/designs3d.png" class="object-cover mt-3 mr-5 h-80 lg:h-96">
-          </div>
-      </div>
-
-      <!-- Separator -->
-      <!-- <div class="my-16 border-b border-gray-300 lg:my-24"></div> -->
-
-      <!-- Bottom Text -->
-  </div>
-</section>
-
-
-<section class="relative py-20 overflow-hidden bg-white">
-  <!-- <span class="absolute top-0 right-0 flex flex-col items-end mt-0 -mr-16 opacity-60">
-      <span class="container hidden w-screen h-32 max-w-xs mt-20 transform rounded-full rounded-r-none md:block md:max-w-xs lg:max-w-lg 2xl:max-w-3xl bg-blue-50"></span>
-  </span> -->
-
-  <!-- <span class="absolute bottom-0 left-0"> </span> -->
-
-  <div class="relative px-16 mx-auto max-w-7xl">
-      <!-- <p class="font-medium tracking-wide text-blue-500 uppercase"></p> -->
-      <h2 class="relative max-w-lg mt-5 mb-10 text-5xl font-extrabold text-left text-black leading-tight lg:text-5xl">Our Judges</h2>
-      <div class="grid w-full grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-3">
-          <div class="flex flex-col items-center justify-center col-span-1">
-              <div class="relative p-5">
-                  <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full rounded-tr-none bg-slate-100"></div>
-                  <img class="relative z-20 w-full rounded-full" src="./asset/image/Judges 1.png">
-              </div>
-              <div class="mt-3 space-y-2 text-center">
-                  <div class="space-y-1 text-lg font-medium leading-6">
-                      <h3>May Sini</h3>
-                      <p class="text-orange-600">Kasir Indomaret</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="flex flex-col items-center justify-center col-span-1">
-              <div class="relative p-5">
-                  <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full rounded-tr-none bg-green-100"></div>
-                  <img class="relative z-20 w-full rounded-full" src="./asset/image/Judges 2.png">
-              </div>
-              <div class="mt-3 space-y-2 text-center">
-                  <div class="space-y-1 text-lg font-medium leading-6">
-                      <h3>John Ass</h3>
-                      <p class="text-orange-600">Bakul Mlijo</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="flex flex-col items-center justify-center col-span-1">
-              <div class="relative p-5">
-                  <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full rounded-tr-none bg-pink-100"></div>
-                  <img class="relative z-20 w-full rounded-full" src="./asset/image/Judges 3.png">
-              </div>
-              <div class="mt-3 space-y-2 text-center">
-                  <div class="space-y-1 text-lg font-medium leading-6">
-                      <h3 class="">Pong Don</h3>
-                      <p class="text-orange-600">Barista Kopstud</p>
-                  </div>
-                  <!-- <div class="relative flex items-center justify-center space-x-3">
-                      <a href="#_" class="text-gray-300 hover:text-gray-400">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
-                      </a>
-                      <a href="#_" class="text-gray-300 hover:text-gray-400">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
-                      </a>
-                  </div> -->
-              </div>
-          </div>
-
-          <!-- <div class="flex flex-col items-center justify-center col-span-1">
-              <div class="relative p-5">
-                  <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full rounded-tr-none bg-green-50"></div>
-                  <img class="relative z-20 w-full rounded-full" src="https://cdn.devdojo.com/images/june2021/avt-09.jpg">
-              </div>
-              <div class="mt-3 space-y-2 text-center">
-                  <div class="space-y-1 text-lg font-medium leading-6">
-                      <h3>Tommy Barnes</h3>
-                      <p class="text-blue-600">Designer</p>
-                  </div>
-                  <div class="relative flex items-center justify-center space-x-3">
-                      <a href="#_" class="text-gray-300 hover:text-gray-400">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
-                      </a>
-                      <a href="#_" class="text-gray-300 hover:text-gray-400">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
-                      </a>
-                  </div>
-              </div>
-          </div> -->
-      </div>
-  </div>
-</section>
-
-
-<div class="h-1/3 w-full">
-  <div class="sm:max-w-5xl pt-8 rounded-xl bg-white mx-4 sm:mx-8 md:mx-auto">
-    <div class="w-11/12 sm:w-2/3 mx-auto mb-10">
-      <h1 class="focus:outline-none xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pt-4">Trusted by
-        company sponsor</h1>
-    </div>
-    <div class="sm:py-6 px-8 sm:24 flex flex-wrap items-center">
-      <div
-        class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
-        <img class="focus:outline-none w-12 sm:w-16 " src="https://cdn-icons-png.flaticon.com/128/3800/3800024.png"
-          alt="Adidas" role="img" />
-      </div>
-      <div
-        class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl ">
-        <img class="focus:outline-none w-12 sm:w-16" src="https://cdn-icons-png.flaticon.com/128/187/187902.png"
-          alt="Chanel" role="img" />
-      </div>
-      <div
-        class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
-        <img class="focus:outline-none w-12 sm:w-16" src="https://cdn-icons-png.flaticon.com/128/3845/3845877.png"
-          alt="Nike" role="img" />
-      </div>
-      <div
-        class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
-        <img class="focus:outline-none w-12 sm:w-16" src="https://cdn-icons-png.flaticon.com/128/732/732242.png"
-          alt="Toyota" role="img" />
-      </div>
-      <div
-        class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
-        <img class="focus:outline-none w-12 sm:w-16" src="https://cdn-icons-png.flaticon.com/128/187/187868.png"
-          alt="Toyota" role="img" />
-      </div>
-      <div
-        class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
-        <img class="focus:outline-none w-12 sm:w-16" src="https://cdn-icons-png.flaticon.com/128/685/685680.png"
-          alt="Toyota" role="img" />
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container h-1/3 flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
-  <!-- <a href="#_" class="text-xl font-black leading-none text-gray-900 select-none logo">tails<span class="text-indigo-600">.</span></a> -->
-  <img src="./asset/image/Hitam.png" class="w-10 h-6 logo" alt="">
-  <p class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">© 2022 BCGRF - Tailwindcss Page Builder
-  </p>
-  <span class="flex flex-col justify-start mt-4 sm:ml-auto sm:mt-0 sm:justify-start">
-    <div class="flex flex-row p-2">
-      <a href="#" class="text-gray-400 hover:text-gray-500">
-          <span class="sr-only">Instagram</span>
-          <i class="fa-brands fa-instagram fa-xl"></i>
-      </a>
-      <p class="text-sm font-semibold justify-center align-middle text-gray-500 hover:text-gray-600 pl-4">@broadcastgrafika</p>
-    </div>
-
-    <div class="flex flex-row p-2">
-      <a href="#" class="text-gray-400 hover:text-gray-500">
-          <span class="sr-only">Youtube</span>
-          <i class="fa-brands fa-youtube fa-xl"></i>
-      </a>
-      <p class="text-sm font-semibold justify-center align-middle text-gray-500 hover:text-gray-600 pl-4">Broadcasting Grafika</p>
-    </div>
-
-    <div class="flex flex-row">
-      <a href="#" class="text-gray-400 hover:text-gray-500">
-          <span class="sr-only">Lokasi</span>
-          <i class="fa-solid fa-location-dot fa-xl"></i>
-      </a>
-      <p class="text-sm font-semibold justify-center align-middle text-gray-500 hover:text-gray-600 pl-4">Jl. Tanimbar No.22, Kasin, Kec. Klojen,<br>Kota Malang, Jawa Timur 65117</p>
-    </div>
-  </span>
-</div>
-
 </body>
+
 </html>
